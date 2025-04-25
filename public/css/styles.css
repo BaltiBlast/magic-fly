@@ -19,8 +19,27 @@ header {
   align-items: center;
 }
 
-h1 {
-  line-height: 0.6;
+.padding-section {
+  padding: 3%;
+}
+
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* HEADER SECTION */
+.header-title {
+  line-height: 1;
+}
+
+.title-name {
+  line-height: 0.5;
+  font-size: 7.5rem;
+}
+
+.title-activity {
+  font-size: 3.2rem;
 }
 
 .header-arrow-down {
@@ -31,17 +50,25 @@ h1 {
   animation: bounce 1.5s infinite ease-in-out;
   display: inline-block;
 }
-
-.txt-uppercase {
-  text-transform: uppercase;
+/* ------------------------------------------------------------------------------------------ */
+/* PRESENTATION SECTION */
+.presentation-section {
+  background-color: #fff;
+  gap: 3%;
 }
 
-.title-name {
-  font-size: 7.5rem;
+.presentation-picture {
+  text-align: center;
+  width: 100%;
 }
 
-.title-activity {
-  font-size: 3.2rem;
+.presentation-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  font-size: 1.4rem;
+  color: #d7645f;
 }
 
 /* ------------------------------------------------------------------------------------------ */
@@ -85,6 +112,11 @@ h1 {
 
   .header-arrow-down {
     width: 8%;
+  }
+
+  .presentation-text {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
 
