@@ -1,0 +1,101 @@
+/* ------------------------------------------------------------------------------------------ */
+/* PICO CSS OVERWRITE */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --pico-background-color: #d7645f;
+  --pico-primary: #fff;
+  --pico-primary-hover: #fff;
+  --pico-color: #fff;
+  --pico-h1-color: #fff;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* GENERIC CSS */
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  line-height: 0.6;
+}
+
+.header-arrow-down {
+  width: 4%;
+}
+
+.arrow-animation {
+  animation: bounce 1.5s infinite ease-in-out;
+  display: inline-block;
+}
+
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.title-name {
+  font-size: 7.5rem;
+}
+
+.title-activity {
+  font-size: 3.2rem;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* FONT STYLE */
+/* Lato font style */
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* titillium font style */
+.titillium-web-black {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* RESPONCIVE PHONE SCREEN */
+@media screen and (max-width: 600px) {
+  .title-name {
+    font-size: 4.5rem;
+  }
+
+  .title-activity {
+    font-size: 2rem;
+  }
+
+  .header-arrow-down {
+    width: 8%;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* ANIMATION */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
