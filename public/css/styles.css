@@ -19,6 +19,13 @@ header {
   align-items: center;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
 .padding-section {
   padding: 3%;
 }
@@ -44,6 +51,7 @@ header {
 
 .header-arrow-down {
   width: 4%;
+  margin-bottom: 30px;
 }
 
 .arrow-animation {
@@ -67,9 +75,21 @@ header {
   align-items: center;
   justify-content: center;
   line-height: 2;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #d7645f;
 }
+
+/* ------------------------------------------------------------------------------------------ */
+/* YOUTUBE PLAYER */
+
+.youtube-players {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* PICTURE SECTION */
 
 /* ------------------------------------------------------------------------------------------ */
 /* FONT STYLE */
@@ -100,6 +120,14 @@ header {
 }
 
 /* ------------------------------------------------------------------------------------------ */
+/* FOOTER */
+.footer-contacts {
+  padding: 2%;
+  color: #d7645f;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------------ */
 /* RESPONCIVE PHONE SCREEN */
 @media screen and (max-width: 600px) {
   .title-name {
@@ -117,6 +145,25 @@ header {
   .presentation-text {
     font-size: 1rem;
     line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .youtube-players {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .youtube-players iframe {
+    width: 100%;
+    padding: 3%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .presentation-section {
+    display: flex;
+    flex-direction: column;
   }
 }
 

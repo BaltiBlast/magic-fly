@@ -19,10 +19,10 @@
     <header>
       <nav>
         <ul class="lato-light">
-          <li><a href="/">Présentation</a></li>
-          <li><a href="/about">Vidéos</a></li>
-          <li><a href="/contact">Photos</a></li>
-          <li><a href="/login">Contacts</a></li>
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#youtube">Vidéos</a></li>
+          <li><a href="#pictures">Photos</a></li>
+          <li><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
       <div class="header-title">
@@ -33,7 +33,7 @@
     </header>
 
     <!-- PRESENTATION -->
-    <section class="grid presentation-section padding-section">
+    <section id="presentation" class="grid presentation-section padding-section">
       <img class="presentation-picture" src="/assets/images/presentation.jpg" alt="photo de présentation" />
       <p class="presentation-text">
         <span
@@ -46,5 +46,57 @@
         >
       </p>
     </section>
+
+    <!-- YOUTUBE SECTION -->
+    <section id="youtube" class="youtube-section">
+      <section class="youtube-players padding-section">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Tu3oyUYv3Mg?si=DZoTx877z6h5TC0m"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Tu3oyUYv3Mg?si=DZoTx877z6h5TC0m"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Tu3oyUYv3Mg?si=DZoTx877z6h5TC0m"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section class="padding-section">
+        <hr />
+      </section>
+
+      <!-- SECTION PHOTO -->
+      <section id="pictures" class="grid padding-section">
+        <img src="/assets/images/jp1.png" alt="" />
+        <img src="/assets/images/martin1.png" alt="" />
+        <img src="/assets/images/robert1.png" alt="" />
+        <img src="/assets/images/singers1.png" alt="" />
+      </section>
+    </section>
+
+    <footer id="contacts">
+      <h4 class="footer-contacts">06 81 08 20 64 - groupemagicfly@gmail.com - www.magicfly.fr</h4>
+    </footer>
   </body>
 </html>
