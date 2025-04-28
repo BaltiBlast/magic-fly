@@ -95,8 +95,42 @@
       </section>
     </section>
 
-    <footer id="contacts">
-      <h4 class="footer-contacts">06 81 08 20 64 - groupemagicfly@gmail.com - www.magicfly.fr</h4>
+    <footer class="padding-section" id="contacts">
+      <div class="contact-information-container">
+        <p class="contact-information">📞 06 81 08 20 64</p>
+        <p class="contact-information">✉️ groupemagicfly@gmail.com</p>
+      </div>
+      <form action="/send-email-contact" method="post">
+        <label>
+          Nom / Prénom
+          <input name="fullName" placeholder="Jean Dupont" autocomplete="given-name" required />
+        </label>
+        <fieldset class="grid">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="jean-dupont@mail.com" autocomplete="email" required />
+          </label>
+          <label>
+            Téléphone
+            <input type="number" name="phone" placeholder="06 01 02 03 04" autocomplete="email" required />
+          </label>
+        </fieldset>
+        <label>
+          Objet
+          <select name="subject" required>
+            <option value="" disabled selected>Choisissez un objet</option>
+            <option value="Demande de devis">Demande de devis</option>
+            <option value="Demande d'informations">Demande d'informations</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+        </label>
+
+        <input type="submit" value="Envoyer" />
+      </form>
     </footer>
   </body>
 </html>
