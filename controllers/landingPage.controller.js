@@ -1,6 +1,6 @@
 const transporter = require("../configs/nodemailer");
 require("dotenv").config();
-// const { GOOGLE_MAIL_USER } = process.env;
+const { GOOGLE_MAIL_USER } = process.env;
 
 const landingPageController = {
   getLandingPage: (req, res) => {
@@ -10,8 +10,8 @@ const landingPageController = {
   postContactFormOnLandingPage: async (req, res) => {
     const { email, subject, message, fullName } = req.body;
     const mailOptions = {
-      from: "fougeray.florian@gmail.com",
-      to: "fougeray.florian@gmail.com",
+      from: GOOGLE_MAIL_USER,
+      to: GOOGLE_MAIL_USER,
       subject: `${fullName} - ${subject}`,
       html: `
       <div>
