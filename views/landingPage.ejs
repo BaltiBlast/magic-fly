@@ -87,11 +87,10 @@
       </section>
 
       <!-- SECTION PHOTO -->
-      <section id="pictures" class="grid padding-section">
-        <img src="/assets/images/jp1.jpg" alt="" />
-        <img src="/assets/images/martin1.jpg" alt="" />
-        <img src="/assets/images/robert1.jpg" alt="" />
-        <img src="/assets/images/singers1.jpg" alt="" />
+      <section id="pictures" class="padding-section">
+        <% if (imageLinks && imageLinks.length > 0) { %> <% imageLinks.forEach(image => { %>
+        <img src="<%= image.url %>" alt="<%= image.name %>" />
+        <% }) %> <% } %>
       </section>
     </section>
 
